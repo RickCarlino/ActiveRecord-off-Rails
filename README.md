@@ -11,10 +11,16 @@ Getting Started
  1. `bundle install`
  2. `ruby main.rb` for project root
  3. Play around with the `Model` class. It's ActiveRecord.
- 4. Find a migration library that suits your needs. I will post examples for each in the future.
-      1. [ActiveRecord Migrations](https://github.com/rosenfeld/active_record_migrations)
-      2. [Standalone Migrations](https://github.com/thuss/standalone-migrations)
+ 
 
+How it works
+------------
+
+The `Rakefile` contains code for [ActiveRecord Migrations](https://github.com/rosenfeld/active_record_migrations)
+
+Within the `Rakefile`, you must set an environment for the database (currently set to 'development').
+
+**You can see all database related tasks via `rake -T`**
 
 License
 -------
